@@ -320,8 +320,9 @@
 				<p style="margin-left: 20px;">support@eliyaemploymentworld.co.in</p>
       </div>
       <div class="rightcontact">
-     <form class="form-inline" name="contactform" action="feedback.php" onsubmit="return formValidator();" method="POST" >
-     <table class="frmtbl" >
+     <form class="form-inline" name="contactform" action="" onsubmit="return formValidator();" method="POST" >
+      {% csrf_token %}
+      <table class="frmtbl" >
 <tr><td>
         <label>First Name:</label></td>
     <td> 
